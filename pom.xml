@@ -80,6 +80,13 @@
 				<artifactId>azure-webapp-maven-plugin</artifactId>
 				<version>1.7.0</version>
 				<configuration>
+					<authentication>
+						<serverId>azure-auth</serverId>
+					</authentication>
+					<appName>springpostgresdemo</appName>
+					<resourceGroup>SpringDemo</resourceGroup>
+					<javaVersion>1.8</javaVersion>
+					<javaWebContainer>tomcat 8.5</javaWebContainer>
 					<schemaVersion>v2</schemaVersion>
 					<resourceGroup>maven-plugin</resourceGroup>
 					<appName>Spring-App</appName>
